@@ -1,0 +1,65 @@
+https://elearning.wsldp.com/pcmagazine/centos-7-filesystem-hierarchy/
+
+ls command - https://www.tecmint.com/15-basic-ls-command-examples-in-linux/
+
+mkdir, tar and kill Commands in Linux - https://www.tecmint.com/mkdir-tar-and-kill-commands-in-linux/
+
+
+date
+date +%F
+date +%D-%M-%Y
+date +%d-%m-%y
+
+touch file-'date+%d-%m-%y'
+
+touch text{1.100}.txt
+
+rm text{1.100}.txt
+rm text{1.100}.txt -r = forcefully
+
+cat > file ---- create a new file
+cat >> file --- to append the new txt
+cat -n file --- how many line that file has
+cat -b file ---- will not add any number to the empty lines
+
+cp source destination
+cp file Downloads/
+cp *.txt Downloads/
+
+ls -ltr new
+cp -Pv new Downloads/ ------- preserve the properties while coping to destination
+
+cp -Rv job/ jpb1/....... will vreate new folder job1 and copy files from job
+
+mv file newfile .... rename file to newfile
+mv file /home/nilesht/Documents ..... copy file from source to destination 
+
+
+
+who
+who -d
+who -r
+who -H
+who -a
+w
+
+
+ps ---- list the process
+ps -a
+ps -U nilesht .... by user
+
+ls /root 2 > /tmp/errors
+cat /tmp/error
+ls /home/nilesht 1> /tmp/errors
+ls /home/nilesht >> /tmp/errors 2>&1
+
+0 = standar input
+1 = standard output
+2 = standar error
+> redirect
+>> append
+
+date > timestamp
+cat timestamp
+date >> timestamp
+
